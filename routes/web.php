@@ -14,6 +14,11 @@ use App\Http\Controllers\MobiliarioOficinaController;
 
 use App\Http\Controllers\SillaGamerController;
 use App\Http\Controllers\EscritorioOdinController;
+
+use App\Http\Controllers\EstantesLibrosController;
+use App\Http\Controllers\ImpresorasController;
+use App\Http\Controllers\PCsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,4 +54,8 @@ Route::get('/mobiliario-oficina', [MobiliarioOficinaController::class, 'mostrarM
 Route::get('/silla-gamer', [SillaGamerController::class, 'mostrarSillaGamer'])->name('silla-gamer');
 Route::get('/escritorio-odin', [EscritorioOdinController::class, 'mostrarEscritorioOdin'])->name('escritorio-odin');
 
+Route::get('/impresoras', [ImpresorasController::class, 'mostrarImpresoras'])->name('impresoras');
+
+Route::get('/estantes-libros', [EstantesLibrosController::class, 'mostrarEstantesLibros'])->name('estantes-libros');
+Route::get('/pcs', [PCsController::class, 'mostrarPCs'])->name('pcs');
 

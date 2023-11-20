@@ -5,7 +5,7 @@
     <title>HomeEngrannda</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="{{ asset('media/NGRANDALGO fflllblck.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('media/NGRANDALGO fflllblck.png') }}" >
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('media/NGRANDALGO fflllblck.png') }}">
     <!-- Nuevas rutas para las imágenes -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
@@ -44,7 +44,7 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-        <a class="navbar-brand logo h1 align-self-center" href="index.html">
+        <a class="navbar-brand logo h1 align-self-center" href="{{ route('home') }}">
     <img src="{{ asset('media/NGRANDALGO fflllblck.png') }}" alt="Nombre de tu imagen" width="120" height="120">
 </a>
 
@@ -210,7 +210,7 @@
     <!-- Corrección de la ruta de la imagen -->
     <a href="#"><img src="{{ asset('media/category_img_01.jpg') }}" class="rounded-circle img-fluid border"></a>
     <h5 class="text-center mt-3 mb-3">Articulos de Limpieza</h5>
-    <p class="text-center"><a class="btn btn-success">Mas info</a></p>
+    <p class="text-center"><a class="btn btn-success" href="{{ route('productos') }}">Mas info</a></p>
 </div>
 
 
@@ -218,13 +218,15 @@
     <!-- Corrección de la ruta de la imagen -->
     <a href="#"><img src="{{ asset('media/category_img_02.png') }}" class="rounded-circle img-fluid border"></a>
     <h2 class="h5 text-center mt-3 mb-3">Tintas e Impresoras</h2>
-    <p class="text-center"><a class="btn btn-success">Mas Info</a></p>
+    <p class="text-center"><a class="btn btn-success" href="{{ route('impresoras') }}">Mas info</a></p>
+   
+
 </div>
 <div class="col-12 col-md-4 p-5 mt-3">
     <!-- Corrección de la ruta de la imagen -->
     <a href="#"><img src="{{ asset('media/papelbond.jpg') }}" class="rounded-circle img-fluid border"></a>
     <h2 class="h5 text-center mt-3 mb-3">Art.Escritorio</h2>
-    <p class="text-center"><a class="btn btn-success">Mas Info</a></p>
+    <p class="text-center"><a class="btn btn-success" href="{{ route('articulos-escritorio') }}" >Mas Info</a></p>
 </div>
         </div>
     </section>
