@@ -14,8 +14,12 @@ return new class extends Migration
         Schema::create('categorias', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            // Agregar más columnas según sea necesario
             $table->timestamps();
+        });
+        
+        Schema::table('productos', function (Blueprint $table) {
+            $table->unsignedBigInteger('categoria_id');
+            $table->foreign('categoria_id')->references('id')->on('categorias')->onDelete('cascade');
         });
     }
 

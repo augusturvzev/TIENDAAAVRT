@@ -9,7 +9,10 @@ class CarritoCompra extends Model
 {
     use HasFactory;
 
-{
+
     protected $fillable = ['usuario_id', 'producto_id', 'cantidad'];
+
 }
-}
+
+
+
