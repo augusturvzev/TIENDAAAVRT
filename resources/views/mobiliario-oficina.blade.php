@@ -150,8 +150,7 @@ https://templatemo.com/tm-559-zay-shop
                             <li><a class="text-decoration-none" href="{{ route('articulos-escritorio') }}">Articulos de escritorio</a></li>
                             <li><a class="text-decoration-none" href="{{ route('mobiliario-oficina') }}">Mobiliario de oficina</a></li>
                         
-                            <li><a class="text-decoration-none" href="#">Articulos Farmaceuticos</a></li>
-                        </ul>
+                       </ul>
                     </li>
                     <li class="pb-3">
                         <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">

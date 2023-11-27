@@ -59,3 +59,6 @@ Route::get('/impresoras', [ImpresorasController::class, 'mostrarImpresoras'])->n
 Route::get('/estantes-libros', [EstantesLibrosController::class, 'mostrarEstantesLibros'])->name('estantes-libros');
 Route::get('/pcs', [PCsController::class, 'mostrarPCs'])->name('pcs');
 
+Route::get('/productos', [ProductosController::class, 'show'])->name('productos');
+
+

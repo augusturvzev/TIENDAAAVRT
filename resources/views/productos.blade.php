@@ -71,9 +71,15 @@ https://templatemo.com/tm-559-zay-shop
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('nosotros') }}">Nosotros</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="{{ route('productos') }}">Productos</a>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('admin.productos')}}">Productos</a>
                         </li>
+
+                        
                         <li class="nav-item">
                              <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
                         </li>
@@ -157,7 +163,6 @@ https://templatemo.com/tm-559-zay-shop
                             <li><a class="text-decoration-none" href="{{ route('impresoras') }}">Impresoras</a></li>
                             <li><a class="text-decoration-none" href="{{ route('pcs') }}">Pcs</a></li>
                             <li><a class="text-decoration-none" href="#">Laptops</a></li>
-                            <li><a class="text-decoration-none" href="#">Equipos de Sonido</a></li>
                         </ul>
                     </li>
                     <li class="pb-3">
