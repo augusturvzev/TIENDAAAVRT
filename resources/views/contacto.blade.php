@@ -135,7 +135,11 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Start Content Page -->
     <div class="container-fluid bg-light py-5">
         <div class="col-md-6 m-auto text-center">
+<<<<<<< HEAD
             <h1 class="h1">Contactate con nosotros</h1>
+=======
+            <h1 class="h1">Contactanos aqui </h1>
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
             <p>
             ¿Tienes preguntas, comentarios o simplemente quieres saludar? Estamos aquí para ayudarte.
             </p>

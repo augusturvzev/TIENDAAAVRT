@@ -14,7 +14,10 @@ class UsuariosController extends Controller
         }
         
         $usuarios = Usuario::all();
+<<<<<<< HEAD
         $usuarios = Usuario::orderBy('id','desc')->paginate(3);
+=======
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
         return view('admin/usuarios/index', compact('usuarios'));
         
     }

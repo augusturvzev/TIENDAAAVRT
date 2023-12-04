@@ -3,6 +3,7 @@
 @section('content')
 
 <style>
+<<<<<<< HEAD
 /* Style the form */
 /* Style the form */
 .form-group {
@@ -52,6 +53,11 @@ label {
   background-color: #6c757d;
   color: white;
 }
+=======
+    /* Tus estilos aquí */
+
+    
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
 </style>
 
 <div class="center-content">
@@ -94,8 +100,14 @@ label {
     </form>
 
     <br>
+<<<<<<< HEAD
     <a href="{{ route('admin.productos') }}" class="btn btn-secondary">Volver a la lista de productos</a>
 </div>
 
 
+=======
+    <a href="{{ route('admin.productos') }}">Volver a la lista de productos</a>
+</div>
+
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
 @endsection

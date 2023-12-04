@@ -137,6 +137,7 @@ https://templatemo.com/tm-559-zay-shop
     <div class="container py-5">
     <div class="row">
 
+<<<<<<< HEAD
         <div class="col-lg-3">
             <h1 class="h2 pb-4">Categorias</h1>
             <ul class="list-unstyled templatemo-accordion">
@@ -176,6 +177,48 @@ https://templatemo.com/tm-559-zay-shop
                 </li>
             </ul>
         </div>
+=======
+            <div class="col-lg-3">
+                <h1 class="h2 pb-4">Categorias</h1>
+                <ul class="list-unstyled templatemo-accordion">
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Productos
+                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul class="collapse show list-unstyled pl-3">
+                            <li><a class="text-decoration-none" href="{{ route('articulos-limpieza') }}">Articulos de limpieza</a></li>
+                            <li><a class="text-decoration-none" href="{{ route('articulos-escritorio') }}">Articulos de escritorio</a></li>
+                            <li><a class="text-decoration-none" href="{{ route('mobiliario-oficina') }}">Mobiliario de oficina</a></li>
+                        
+                       </ul>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Equipos
+                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul id="collapseTwo" class="collapse list-unstyled pl-3">
+                            <li><a class="text-decoration-none" href="{{ route('impresoras') }}">Impresoras</a></li>
+                            <li><a class="text-decoration-none" href="#">Pcs</a></li>
+                            <li><a class="text-decoration-none" href="#">Laptops</a></li>
+                            <li><a class="text-decoration-none" href="#">Equipos de Sonido</a></li>
+                        </ul>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Servicios
+                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul id="collapseThree" class="collapse list-unstyled pl-3">
+                            <li><a class="text-decoration-none" href="#">Mantenimiento Profesional para Instalaciones Electricas</a></li>
+                            <li><a class="text-decoration-none" href="#">Comercializacion de Muebles de Melamina</a></li>
+                            <li><a class="text-decoration-none" href="#">Servicio de Construccion pintado y edificaciones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
 
             <div class="col-lg-9">
                 <div class="row">

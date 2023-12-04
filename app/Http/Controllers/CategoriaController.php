@@ -12,9 +12,13 @@ class CategoriaController extends Controller
             return redirect()->route('login.index')->with('mensaje', 'Acceso No Autorizado');
         }
         
+<<<<<<< HEAD
        
         $categoria = Categoria::all();
         $categoria = Categoria::orderBy('id','desc')->paginate(3);
+=======
+        $categoria = Categoria::all();
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
         return view('admin/categoria/index', compact('categoria'));
        
     }

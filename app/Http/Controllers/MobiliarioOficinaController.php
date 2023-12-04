@@ -9,6 +9,9 @@ class MobiliarioOficinaController extends Controller
     //
     public function mostrarMobiliario()
     {
-        return view('mobiliario-oficina'); // Asegúrate de tener una vista llamada 'mobiliario-oficina'
+        return view('mobiliario-oficina')
+        ; // Asegúrate de tener una vista llamada 'mobiliario-oficina'
+    
     }
+    
 }

@@ -10,6 +10,7 @@
         @method('PUT') <!-- Utiliza PUT para la actualización -->
         <div class="row">
             <div class="form-group col-md-4">
+<<<<<<< HEAD
                 <label for="nombres" style="color: black;">Usuario</label>
                 <input type="text" style="background: rgba(251, 247, 247, 0.388); color: #000" class="form-control" id="nombres" name="usuario" value="{{ $usuarios->usuario }}" required>
             </div>
@@ -20,6 +21,18 @@
             <div class="form-group col-md-4">
                 <label for="dni" style="color: black;">Contraseña</label>
                 <input type="text" style="background: rgba(251, 247, 247, 0.388); color: #000" class="form-control" id="dni" name="password" value="{{ $usuarios->password }}" required>
+=======
+                <label for="nombres" style="color: white;">Usuario</label>
+                <input type="text" style="background: rgba(251, 247, 247, 0.388); color: #ffffff" class="form-control" id="nombres" name="usuario" value="{{ $usuarios->usuario }}" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="apellidos" style="color: white;">Correo</label>
+                <input type="text" style="background: rgba(251, 247, 247, 0.388); color: #ffffff" class="form-control" id="apellidos" name="correo" value="{{ $usuarios->correo }}" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="dni" style="color: white;">Contraseña</label>
+                <input type="text" style="background: rgba(251, 247, 247, 0.388); color: #ffffff" class="form-control" id="dni" name="password" value="{{ $usuarios->password }}" required>
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
             </div>
          
           

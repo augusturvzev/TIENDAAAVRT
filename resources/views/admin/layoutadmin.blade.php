@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
     <title>Productos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +22,21 @@
 
     
     <!-- <style>
+=======
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
         * {
     padding: 0;
     margin: 0;
@@ -46,7 +62,11 @@ nav {
 .cont-ul {
     display: flex;
     align-items: center;
+<<<<<<< HEAD
 }
+=======
+}   
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
 
 li {
     list-style: none;
@@ -108,6 +128,7 @@ li:hover {
         display: none;
     }
 }
+<<<<<<< HEAD
     </style> -->
  <!-- Start Top Nav -->
 
@@ -208,6 +229,13 @@ li:hover {
 <body>
     <!-- <nav>
         <p class="logo-danicodex">ENGRANDA</p>
+=======
+    </style>
+</head>
+<body>
+    <nav>
+        <p class="logo-danicodex">ENGRANNDA</p>
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
         <ul class="cont-ul">
             <li><a href="#">Inicio</a></li>
             <li>Informacion</li>
@@ -229,7 +257,11 @@ li:hover {
             <li>Ayuda</li>
             <li> <a href="{{route('login.logout')}}" style="color: red; text-decoration: none;"><b>Cerrar Sesión</b></a></li>
         </ul>
+<<<<<<< HEAD
     </nav> -->
+=======
+    </nav>
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
 
     <div>@yield('content')</div>
 </body>

@@ -106,6 +106,7 @@ Route::get('/impresoras', [ImpresorasController::class, 'mostrarImpresoras'])->n
 Route::get('/estantes-libros', [EstantesLibrosController::class, 'mostrarEstantesLibros'])->name('estantes-libros');
 Route::get('/pcs', [PCsController::class, 'mostrarPCs'])->name('pcs');
 
+<<<<<<< HEAD
 Route::get('categoriaProductos', [CategoriaController::class,'categoria'])->name('admin.categoria');
 Route::get('categoria/create', [CategoriaController::class, 'createcategoria'])->name('categoria.create');
 Route::post('categoria', [CategoriaController::class, 'storecategoria'])->name('categoria.store');
@@ -135,3 +136,8 @@ Route::get('/macBookP16', [MacBookP16Controller::class, 'index'])->name('macBook
 Route::get('/mSIGF63', [MSIGF63Controller::class, 'index'])->name('mSIGF63');
 Route::get('/dellAlien', [DellAlienController::class, 'index'])->name('dellAlien');
 Route::get('/dellInspiron', [DellInspironController::class, 'index'])->name('dellInspiron');
+=======
+Route::get('/productos', [ProductosController::class, 'show'])->name('productos');
+
+
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9

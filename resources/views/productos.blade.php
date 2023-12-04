@@ -71,9 +71,20 @@ https://templatemo.com/tm-559-zay-shop
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('nosotros') }}">Nosotros</a>
                         </li>
+<<<<<<< HEAD
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('productos.show') }}">Productos</a>
+=======
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="{{ route('productos') }}">Productos</a>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('admin.productos')}}">Productos</a>
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
                         </li>
+
+                        
                         <li class="nav-item">
                              <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
                         </li>
@@ -153,7 +164,11 @@ https://templatemo.com/tm-559-zay-shop
                         <ul id="collapseTwo" class="collapse list-unstyled pl-3">
                             <li><a class="text-decoration-none" href="{{ route('impresoras') }}">Impresoras</a></li>
                             <li><a class="text-decoration-none" href="{{ route('pcs') }}">Pcs</a></li>
+<<<<<<< HEAD
                             <li><a class="text-decoration-none" href="{{ route('laptop') }}">Laptops</a></li>
+=======
+                            <li><a class="text-decoration-none" href="#">Laptops</a></li>
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
                         </ul>
                     </li>
                     <li class="pb-3">

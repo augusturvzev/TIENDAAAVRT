@@ -2,6 +2,7 @@
 @extends('admin/layoutadmin')
 
 @section('content')
+<<<<<<< HEAD
 <style>
 
 .container {
@@ -32,6 +33,9 @@ form {
   margin-bottom: 10px;
 }
 </style>
+=======
+
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
 <div class="container">
     <h2>Editar Categoria</h2>
     <form method="POST" action="{{ route('categoria.update', $categoria->id) }}">
@@ -45,6 +49,7 @@ form {
             <label for="nombres">Descripción</label>
             <input type="text" class="form-control" id="nombres" name="descripcion" value="{{ $categoria->descripcion }}" required>
         </div>
+<<<<<<< HEAD
         <div class="form-group col-md-4">
          <button type="submit" class="btn btn-primary">Guardar cambios</button>
 
@@ -58,5 +63,10 @@ form {
 
         <a href="{{route('productos.create')}}" class="btn btn-success mr-6">Agregar Productos</a> -->
 
+=======
+       
+        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+    </form>
+>>>>>>> c4d6caa4806bead91d903f36abea3368c85bd6f9
 </div>
 @endsection
