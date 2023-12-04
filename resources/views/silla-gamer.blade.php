@@ -50,7 +50,7 @@ https://templatemo.com/tm-559-zay-shop
                     <i class="fa fa-envelope mx-2"></i>
                     <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:engrannda@gmail.com">engrannda@gmail.com</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:943535993">943535993</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:943535773">943535773</a>
                 </div>
                 <div>
                     <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
@@ -87,7 +87,7 @@ https://templatemo.com/tm-559-zay-shop
                             <a class="nav-link" href="{{ route('nosotros') }}">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('productos') }}">Productos</a>
+                            <a class="nav-link" href="{{ route('productos.show') }}">Productos</a>
                         </li>
                         <li class="nav-item">
                              <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>

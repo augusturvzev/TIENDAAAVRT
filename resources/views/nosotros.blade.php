@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Zay Shop eCommerce HTML CSS Template</title>
+    <title>Nosotros</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="{{ asset('media/NGRANDALGO fflllblck.png') }}">
@@ -35,10 +35,10 @@ https://templatemo.com/tm-559-zay-shop
                     <i class="fa fa-envelope mx-2"></i>
                     <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:engrannda@gmail.com">engrannda@gmail.com</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:943535993">943535993</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:943535773">943535773</a>
                 </div>
                 <div>
-                    <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href=https://www.facebook.com/ target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
@@ -59,7 +59,6 @@ https://templatemo.com/tm-559-zay-shop
 
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
@@ -72,7 +71,7 @@ https://templatemo.com/tm-559-zay-shop
                             <a class="nav-link" href="{{ route('nosotros') }}">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('productos') }}">Productos</a>
+                            <a class="nav-link" href="{{ route('productos.show') }}">Productos</a>
                         </li>
                         <li class="nav-item">
                              <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
@@ -96,12 +95,10 @@ https://templatemo.com/tm-559-zay-shop
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"> </span>
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
-                    </a>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>                    </a>
                 </div>
             </div>
 
@@ -142,9 +139,9 @@ https://templatemo.com/tm-559-zay-shop
                     </p>
                 </div>
                 <div class="col-md-4">
-                <img src="{{ asset('media/about-hero.svg') }}" alt="About Hero">
+                <img src="{{ asset('media/provEG.png') }}" alt="    ">
 
-
+                <!-- "{{ asset('media/about-hero.svg') }}" -->
                 </div>
             </div>
         </div>
@@ -155,10 +152,9 @@ https://templatemo.com/tm-559-zay-shop
     <section class="container py-5">
         <div class="row text-center pt-5 pb-3">
             <div class="col-lg-6 m-auto">
-                <h1 class="h1">Our Services</h1>
+                <h1 class="h1">Disfruta de la excelencia en cada detalle</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    Lorem ipsum dolor sit amet.
+                 Vive la mejor experiencia con nosotros donde cada momento está diseñado para superar tus expectativas
                 </p>
             </div>
         </div>
@@ -167,28 +163,28 @@ https://templatemo.com/tm-559-zay-shop
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
-                    <h2 class="h5 mt-4 text-center">Delivery Services</h2>
+                    <h2 class="h5 mt-4 text-center">Entrega Rapida</h2>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fas fa-exchange-alt"></i></div>
-                    <h2 class="h5 mt-4 text-center">Shipping & Return</h2>
+                    <h2 class="h5 mt-4 text-center">Solicitud de Devolucion</h2>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-percent"></i></div>
-                    <h2 class="h5 mt-4 text-center">Promotion</h2>
+                    <h2 class="h5 mt-4 text-center">Promociones</h2>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-user"></i></div>
-                    <h2 class="h5 mt-4 text-center">24 Hours Service</h2>
+                    <h2 class="h5 mt-4 text-center">24 horas de servicio</h2>
                 </div>
             </div>
         </div>
@@ -200,11 +196,12 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container my-4">
             <div class="row text-center py-3">
                 <div class="col-lg-6 m-auto">
-                    <h1 class="h1">Our Brands</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        Lorem ipsum dolor sit amet.
+                    <h1 class="h1">Trabajamos con las mejores marcas </h1>
+                    <!-- <p>
+                        Trabajamos con las mejores marcas 
+                       
                     </p>
+                    <p> Nacionales e Internacionales </p> -->
                 </div>
                 <div class="col-lg-9 m-auto tempaltemo-carousel">
                     <div class="row d-flex flex-row">
@@ -223,61 +220,71 @@ https://templatemo.com/tm-559-zay-shop
                                 <div class="carousel-inner product-links-wap" role="listbox">
 
                                     <!--First slide-->
-                                    <div class="carousel-item active">
-                                        <div class="row">
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End First slide-->
+                                    <style>
+                                        .img-fixed {
+                                            width: 100px; /* ajusta el tamaño según sea necesario */
+                                            height: auto; /* para mantener la proporción original */
+                                        }
+                                        .carousel-item {
+  width: 750px; /* Ajusta el ancho según tu deseo */
+  height: 200px; /* Ajusta el alto según tu deseo */
+}
+/* .brand-img {
+  object-fit: cover;
+} */
+/* .col-3 {
+  background-size: cover;
+} */
 
-                                    <!--Second slide-->
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Second slide-->
+/* .brand-img {
+  object-fit: center;
+} */
+.row {
+  display: center;
+  align-items: center;
+  justify-content: center;
+}
+                                    </style>
+                                    <!-- Primer slide -->
+                                    
+<div class="carousel-item active">
+    <div class="row">
+        <div class="col-3 p-md-5">
+            <a href="#"><img class="img-fixed brand-img" src="{{ asset('media/apple.png') }}" alt="Brand Logo"></a>
+        </div>
+        <div class="col-3 p-md-5">
+            <a href="#"><img class="img-fixed brand-img" src="{{ asset('media/asus.png') }}" alt="Brand Logo"></a>
+        </div>
+        <div class="col-3 p-md-5">
+            <a href="#"><img class="img-fixed brand-img" src="{{ asset('media/hp.png') }}" alt="Brand Logo"></a>
+        </div>
+        <div class="col-3 p-md-5">
+            <a href="#"><img class="img-fixed brand-img" src="{{ asset('media/dell.png') }}" alt="Brand Logo"></a>
+        </div>
+    </div>
+</div>
+<!-- Fin del primer slide -->
 
-                                    <!--Third slide-->
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Third slide-->
+<!-- Segundo slide -->
+<div class="carousel-item">
+    <div class="row">
+        <div class="col-3 p-md-5">
+            <a href="#"><img class="img-fixed brand-img" src="{{ asset('media/acerr.png') }}" alt="Brand Logo"></a>
+        </div>
+        <div class="col-3 p-md-5">
+            <a href="#"><img class="img-fixed brand-img" src="{{ asset('media/canon.png') }}" alt="Brand Logo"></a>
+        </div>
+        <div class="col-3 p-md-5">
+            <a href="#"><img class="img-fixed brand-img" src="{{ asset('media/Epson.png') }}" alt="Brand Logo"></a>
+        </div>
+        <div class="col-3 p-md-5">
+            <a href="#"><img class="img-fixed brand-img" src="{{ asset('media/xerox.png') }}" alt="Brand Logo"></a>
+        </div>
+    </div>
+</div>
+<!-- Fin del segundo slide -->
+
+
 
                                 </div>
                                 <!--End Slides-->

@@ -35,7 +35,7 @@ https://templatemo.com/tm-559-zay-shop
                     <i class="fa fa-envelope mx-2"></i>
                     <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:engrannda@gmail.com">engrannda@gmail.com</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:943535993">943535993</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:943535773">943535773</a>
                 </div>
                 <div>
                     <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
@@ -72,7 +72,7 @@ https://templatemo.com/tm-559-zay-shop
                             <a class="nav-link" href="{{ route('nosotros') }}">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('productos') }}">Productos</a>
+                            <a class="nav-link" href="{{ route('productos.show') }}">Productos</a>
                         </li>
                         <li class="nav-item">
                              <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
@@ -96,11 +96,9 @@ https://templatemo.com/tm-559-zay-shop
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
                     </a>
                 </div>
             </div>
@@ -145,7 +143,6 @@ https://templatemo.com/tm-559-zay-shop
                             <li><a class="text-decoration-none" href="{{ route('articulos-escritorio') }}">Articulos de escritorio</a></li>
                             <li><a class="text-decoration-none" href="{{ route('mobiliario-oficina') }}">Mobiliario de oficina</a></li>
                         
-                            <li><a class="text-decoration-none" href="#">Articulos Farmaceuticos</a></li>
                         </ul>
                     </li>
                     <li class="pb-3">
@@ -156,8 +153,7 @@ https://templatemo.com/tm-559-zay-shop
                         <ul id="collapseTwo" class="collapse list-unstyled pl-3">
                             <li><a class="text-decoration-none" href="{{ route('impresoras') }}">Impresoras</a></li>
                             <li><a class="text-decoration-none" href="{{ route('pcs') }}">Pcs</a></li>
-                            <li><a class="text-decoration-none" href="#">Laptops</a></li>
-                            <li><a class="text-decoration-none" href="#">Equipos de Sonido</a></li>
+                            <li><a class="text-decoration-none" href="{{ route('laptop') }}">Laptops</a></li>
                         </ul>
                     </li>
                     <li class="pb-3">
@@ -166,9 +162,9 @@ https://templatemo.com/tm-559-zay-shop
                             <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
                         <ul id="collapseThree" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Bag</a></li>
-                            <li><a class="text-decoration-none" href="#">Sweather</a></li>
-                            <li><a class="text-decoration-none" href="#">Sunglass</a></li>
+                        <li><a class="text-decoration-none" href="{{ route('sistemaE') }}">Mantenimiento Profesional para Instalaciones Electricas</a></li>
+                        <li><a class="text-decoration-none" href="{{ route('mueblesM') }}">Comercializacion de Muebles de Melamina</a></li>
+                        <li><a class="text-decoration-none" href="{{ route('construccioP') }}">Servicio de Construccion pintado y edificaciones</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -478,19 +474,7 @@ https://templatemo.com/tm-559-zay-shop
     </div>
     <!-- End Content -->
 
-    <!-- Start Brands -->
-    <section class="bg-light py-5">
-        <div class="container my-4">
-            <div class="row text-center py-3">
-                <div class="col-lg-6 m-auto">
-                    <h1 class="h1">Our Brands</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        Lorem ipsum dolor sit amet.
-                    </p>
-                </div>
-                <div class="col-lg-9 m-auto tempaltemo-carousel">
-                    <div class="row d-flex flex-row">
+
                         <!--Controls-->
                         <div class="col-1 align-self-center">
                             <a class="h1" href="#multi-item-example" role="button" data-bs-slide="prev">
@@ -505,64 +489,7 @@ https://templatemo.com/tm-559-zay-shop
                                 <!--Slides-->
                                 <div class="carousel-inner product-links-wap" role="listbox">
 
-                                    <!--First slide-->
-                                    <div class="carousel-item active">
-                                        <div class="row">
-                                            <div class="col-3 p-md-5">
-                                                <img class="card-img rounded-0 img-fluid" src="{{ asset('media/brand_01.png') }}">
-
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="{{ asset('media/brand_02.png') }}" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="{{ asset('media/brand_03.png') }}" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="{{ asset('media/brand_04.png') }}" alt="Brand Logo"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End First slide-->
-
-                                    <!--Second slide-->
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="{{ asset('media/brand_01.png') }}" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="{{ asset('media/brand_02.png') }}" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="{{ asset('media/brand_03.png') }}" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="{{ asset('media/brand_04.png') }}" alt="Brand Logo"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Second slide-->
-
-                                    <!--Third slide-->
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="{{ asset('media/brand_01.png') }}" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="{{ asset('media/brand_02.png') }}" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="{{ asset('media/brand_03.png') }}" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="{{ asset('media/brand_04.png') }}"alt="Brand Logo"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Third slide-->
-
+                     
                                 </div>
                                 <!--End Slides-->
                             </div>
@@ -609,11 +536,12 @@ https://templatemo.com/tm-559-zay-shop
 
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Articulos de Limpieza</a></li>
-                        <li><a class="text-decoration-none" href="#">Articulos de Escritorio</a></li>
-                        <li><a class="text-decoration-none" href="#">Mobiliario de Oficina</a></li>
-                        <li><a class="text-decoration-none" href="#">Articulos Farmaceuticos</a></li>
+                    <li><a class="text-decoration-none" href="{{ route('articulos-limpieza') }}">Articulos de limpieza</a></li>
+                            
+<li><a class="text-decoration-none" href="{{ route('articulos-escritorio') }}">Articulos de escritorio</a></li>
+                            
+<li><a class="text-decoration-none" href="{{ route('mobiliario-oficina') }}">Mobiliario de oficina</a></li>
+
        
                     </ul>
                 </div>

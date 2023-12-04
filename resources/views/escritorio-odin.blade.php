@@ -82,7 +82,7 @@ https://templatemo.com/tm-559-zay-shop
                             <a class="nav-link" href="{{ route('nosotros') }}">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('productos') }}">Productos</a>
+                            <a class="nav-link" href="{{ route('productos.show') }}">Productos</a>
                         </li>
                         <li class="nav-item">
                              <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
@@ -307,7 +307,7 @@ Fijas</li>
                         </li>
                         <li>
                             <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:010-020-0340">943535993</a>
+                            <a class="navbar-sm-brand text-light text-decoration-none" href="tel:943535773">943535773</a>
                         </li>
                         <li>
                             <i class="fa fa-envelope fa-fw"></i>
