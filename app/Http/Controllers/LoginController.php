@@ -19,10 +19,10 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             // Autenticación exitosa
-            return redirect()->intended('/dashboard');
+            return redirect()->intended('/welcome');
         } else {
             // Autenticación fallida
-            return redirect()->route('login')->with('error', 'Credenciales incorrectas');
+            return redirect()->route('login')->with('error', 'Credenciales incorrectas, Por favor intente de nuevo.');
         }
     }
 

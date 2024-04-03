@@ -35,7 +35,7 @@ https://templatemo.com/tm-559-zay-shop
                     <i class="fa fa-envelope mx-2"></i>
                     <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:engrannda@gmail.com">engrannda@gmail.com</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:943535993">943535993</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:943535773">943535773</a>
                 </div>
                 <div>
                     <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
@@ -72,7 +72,7 @@ https://templatemo.com/tm-559-zay-shop
                             <a class="nav-link" href="{{ route('nosotros') }}">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('productos') }}">Productos</a>
+                            <a class="nav-link" href="{{ route('productos.show') }}">Productos</a>
                         </li>
                         <li class="nav-item">
                              <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
@@ -132,47 +132,46 @@ https://templatemo.com/tm-559-zay-shop
     <div class="container py-5">
         <div class="row">
 
-            <div class="col-lg-3">
-                <h1 class="h2 pb-4">Categorias</h1>
-                <ul class="list-unstyled templatemo-accordion">
-                    <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Productos
-                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
-                        </a>
-                        <ul class="collapse show list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="{{ route('articulos-limpieza') }}">Articulos de limpieza</a></li>
-                            <li><a class="text-decoration-none" href="{{ route('articulos-escritorio') }}">Articulos de escritorio</a></li>
-                            <li><a class="text-decoration-none" href="{{ route('mobiliario-oficina') }}">Mobiliario de oficina</a></li>
-                        
-                            <li><a class="text-decoration-none" href="#">Articulos Farmaceuticos</a></li>
-                        </ul>
-                    </li>
-                    <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Equipos
-                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
-                        </a>
-                        <ul id="collapseTwo" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="{{ route('impresoras') }}">Impresoras</a></li>
-                            <li><a class="text-decoration-none" href="#">Pcs</a></li>
-                            <li><a class="text-decoration-none" href="#">Laptops</a></li>
-                            <li><a class="text-decoration-none" href="#">Equipos de Sonido</a></li>
-                        </ul>
-                    </li>
-                    <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Servicios
-                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
-                        </a>
-                        <ul id="collapseThree" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Mantenimiento Profesional para Instalaciones Electricas</a></li>
-                            <li><a class="text-decoration-none" href="#">Comercializacion de Muebles de Melamina</a></li>
-                            <li><a class="text-decoration-none" href="#">Servicio de Construccion pintado y edificaciones</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+
+<div class="col-lg-3">
+    <h1 class="h2 pb-4">Categorias</h1>
+    <ul class="list-unstyled templatemo-accordion">
+        <li class="pb-3">
+            <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                Productos
+                <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+            </a>
+            <ul class="collapse show list-unstyled pl-3">
+                <li><a class="text-decoration-none" href="{{ route('articulos-limpieza') }}">Articulos de limpieza</a></li>
+                <li><a class="text-decoration-none" href="{{ route('articulos-escritorio') }}">Articulos de escritorio</a></li>
+                <li><a class="text-decoration-none" href="{{ route('mobiliario-oficina') }}">Mobiliario de oficina</a></li>
+            
+            </ul>
+        </li>
+        <li class="pb-3">
+            <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                Equipos
+                <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+            </a>
+            <ul id="collapseTwo" class="collapse list-unstyled pl-3">
+                <li><a class="text-decoration-none" href="{{ route('impresoras') }}">Impresoras</a></li>
+                <li><a class="text-decoration-none" href="{{ route('pcs') }}">Pcs</a></li>
+                <li><a class="text-decoration-none" href="{{ route('laptop') }}">Laptops</a></li>
+            </ul>
+        </li>
+        <li class="pb-3">
+            <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                Servicios
+                <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+            </a>
+            <ul id="collapseThree" class="collapse list-unstyled pl-3">
+            <li><a class="text-decoration-none" href="{{ route('sistemaE') }}">Mantenimiento Profesional para Instalaciones Electricas</a></li>
+            <li><a class="text-decoration-none" href="{{ route('mueblesM') }}">Comercializacion de Muebles de Melamina</a></li>
+            <li><a class="text-decoration-none" href="{{ route('construccioP') }}">Servicio de Construccion pintado y edificaciones</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
 
             <div class="col-lg-9">
                 <div class="row">

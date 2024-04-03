@@ -26,7 +26,7 @@
                     <i class="fa fa-envelope mx-2"></i>
                     <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:engrannda@gmail.com">engrannda@gmail.com</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:943535993">943535993</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:943535773">943535773</a>
                 </div>
                 <div>
                     <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
@@ -44,13 +44,12 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-        <a class="navbar-brand logo h1 align-self-center" href="{{ route('home') }}">
+        <a class="navbar-brand logo h1 align-self-center" href="{{ route('login.index') }}">
     <img src="{{ asset('media/NGRANDALGO fflllblck.png') }}" alt="Nombre de tu imagen" width="120" height="120">
 </a>
 
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
@@ -63,13 +62,16 @@
                             <a class="nav-link" href="{{ route('nosotros') }}">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('productos') }}">Productos</a>
+                            <a class="nav-link" href="{{ route('productos.show') }}">Productos</a>
                         </li>
                         <li class="nav-item">
                              <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
                         </li>
                         <li class="nav-item">
                              <a class="nav-link" href="{{ route('login') }}">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                             <!-- <a class="nav-link" href=  "{{ route('login') }}" </a> -->
                         </li>
                     </ul>
                 </div>
@@ -87,11 +89,9 @@
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
-                    </a>
+                        </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
                     </a>
                 </div>
             </div>
@@ -210,7 +210,7 @@
     <!-- Corrección de la ruta de la imagen -->
     <a href="#"><img src="{{ asset('media/category_img_01.jpg') }}" class="rounded-circle img-fluid border"></a>
     <h5 class="text-center mt-3 mb-3">Articulos de Limpieza</h5>
-    <p class="text-center"><a class="btn btn-success" href="{{ route('productos') }}">Mas info</a></p>
+    <p class="text-center"><a class="btn btn-success" href="{{ route('productos.show') }}">Mas info</a></p>
 </div>
 
 
@@ -256,7 +256,7 @@
                            
                              
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Servicio de Construccion pintado y edificaciones</a>
+                            <a href="{{ route('sistemaE') }}" class="h2 text-decoration-none text-dark">Servicio de Construccion pintado y edificaciones</a>
                             <p class="card-text">
                             Nuestro equipo de expertos en construcción se compromete a ofrecer proyectos sólidos y duraderos. Desde renovaciones hasta nuevas construcciones, 
                             manejamos cada fase con precisión y atención a los detalles, asegurándonos de que cada estructura sea segura, funcional y estéticamente agradable.
@@ -276,7 +276,7 @@
                                 <li>
                                
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Mantenimiento Profesional para Instalaciones Electricas </a>
+                            <a href="{{ route('mueblesM') }}" class="h2 text-decoration-none text-dark">Mantenimiento Profesional para Instalaciones Electricas </a>
                             <p class="card-text">
                             Nuestro servicio de mantenimiento profesional para instalaciones eléctricas ofrece tranquilidad y eficiencia. Nuestro equipo altamente capacitado realiza inspecciones exhaustivas,
                              abordando problemas potenciales mediante mantenimiento preventivo, ajustes de conexiones y detección temprana de desgastes. Además, proponemos actualizaciones y 
@@ -296,7 +296,7 @@
                                 <li>
                          
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Comercializacion de Muebles de Melamina </a>
+                            <a href="{{ route('mueblesM') }}" class="h2 text-decoration-none text-dark">Comercializacion de Muebles de Melamina </a>
                             <p class="card-text">                          
                                 Bienvenido a nuestra emocionante propuesta de comercialización de muebles de melamina, donde fusionamos diseño y calidad para ofrecerte una experiencia excepcional. Nuestra variada gama abarca desde estilos modernos hasta clásicos, adaptándose a cualquier decoración residencial o comercial. La durabilidad es nuestra firma, con muebles resistentes a arañazos, manchas y abrasiones, garantizando un atractivo duradero y fácil mantenimiento. Nos destacamos por la personalización a medida, ajustando colores, acabados y dimensiones para crear muebles perfectamente adaptados a tus necesidades y espacio. 
                             </p>
@@ -336,10 +336,12 @@
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Articulos de Limpieza</a></li>
-                        <li><a class="text-decoration-none" href="#">Articulos de Escritorio</a></li>
-                        <li><a class="text-decoration-none" href="#">Mobiliario de Oficina</a></li>
-                        <li><a class="text-decoration-none" href="#">Articulos Farmaceuticos</a></li>
+                    <li><a class="text-decoration-none" href="{{ route('articulos-limpieza') }}">Articulos de limpieza</a></li>
+                            
+                            <li><a class="text-decoration-none" href="{{ route('articulos-escritorio') }}">Articulos de escritorio</a></li>
+                                                        
+                            <li><a class="text-decoration-none" href="{{ route('mobiliario-oficina') }}">Mobiliario de oficina</a></li>
+                            
        
                     </ul>
                 </div>
@@ -347,10 +349,9 @@
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Servicios </h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#"></a></li>
-                        <li><a class="text-decoration-none" href="#">Mantenimiento Profesional para Instalaciones Electricas</a></li>
-                        <li><a class="text-decoration-none" href="#">Comercializacion de Muebles de Melamina</a></li>
-                        <li><a class="text-decoration-none" href="#">Servicio de Construccion pintado y edificaciones</a></li>
+                    <li><a class="text-decoration-none" href="{{ route('sistemaE') }}">Mantenimiento Profesional para Instalaciones Electricas</a></li>
+                        <li><a class="text-decoration-none" href="{{ route('mueblesM') }}">Comercializacion de Muebles de Melamina</a></li>
+                        <li><a class="text-decoration-none" href="{{ route('construccioP') }}">Servicio de Construccion pintado y edificaciones</a></li>
                     </ul>
                 </div>
 
